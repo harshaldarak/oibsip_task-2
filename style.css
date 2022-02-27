@@ -1,0 +1,230 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.sidebar{
+   /* background-color:gray; */
+   background-color: #606060;
+   width:16vw;
+   height:100vh;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 2px;
+   
+}
+ul li a:hover{
+    border-bottom: 2px solid;
+   
+}
+
+
+.sidebar nav{
+    padding: 45px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    padding:33px 0px;
+    color: white;
+}
+
+.main{
+    width:90vw;
+    height: 100vh;
+    padding-left: 4%;
+}
+
+.container{
+    display:flex;
+}
+.infocontainer{
+    height:78vh;
+    width:80vw;
+    margin:5rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    
+    font-size: 2.5rem;
+    font-weight: 200;
+   
+}
+.devpic{
+    width: 160px;
+}
+
+.devpic img{
+    height: 60%;
+}
+
+.name{
+   font-size: 50px;
+   font-size: 3.2rem;
+   font-weight: 600;
+   
+
+   animation:3s move;
+   animation-fill-mode:forwards;
+   animation-iteration-count: 1;
+   animation-direction:alternate-reverse;
+   animation-direction: alternate;
+  
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(80%);
+    }
+    30%{
+        transform: rotateX(120deg);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: rotateZ(360deg);
+        color: #007bff;
+    }
+    
+}
+
+/************** About Section ************/
+
+.about{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}
+.buttons{
+   
+    margin: 5%;
+}
+
+div .bg-btn{
+    margin: 10px;
+    padding: 5px;
+    width:125px;
+    font-size: 1rem;
+    border:2px solid #007bff;;
+    border-radius: 15px;
+   
+}
+
+.bg-btn:hover{
+    background-color: #007bff;;
+    color: white;
+    cursor: pointer;
+}
+
+
+.social img{
+    width:25px
+}
+
+a{
+    text-decoration: none;
+   color: black;
+}
+a:hover{
+    color: #fff;
+}
+
+/******** SKILL SECTION *******/
+.myskills{
+    
+    width:35rem;
+    height: 10px;
+    background-color: rgb(168, 146, 146);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill{
+    margin:5%;
+}
+
+.sk1{
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
+#html{
+   
+    background-color: green;
+    height: 100%;
+    width:90%;
+
+}
+#css{
+    background-color:#ff2525;
+    height: 100%;
+    width:80%;
+}
+
+#js{
+    background-color:#ff7100;
+    height: 100%;
+    width:70%;
+}
+#react{
+    background-color:  #da0994;
+    height: 100%;
+    width:55%;
+}
+#cpp{
+    background-color: #4b29e4;
+    height: 100%;
+    width:65%;
+}
+#java{
+    background-color:#c6e01c;;
+    height: 100%;
+    width:65%;
+}
+.skill h2{
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+  .line-1{
+      position: relative;
+      top: 4%;  
+      margin: 0 auto;
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+  }
+  
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 4s steps(44) 5s infinite normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+    animation-delay: 1s;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 16em;}
+    100%{
+        color: red;
+    }
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(92, 43, 43, 0.75);}
+    to{border-right-color: transparent;}
+  }
+  

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+            font-weight: 550;
+        }
+        .contactform{
+            margin:2px;
+            padding: 10px;
+            border:6px solid blueviolet;
+            width:70%;
+            border-radius: 15px;
+            position: relative;
+            height: max-content;
+        }
+        form{
+            margin-top: 42px;
+        }
+        .mb-3{
+            margin:14px;
+        }
+        #name,#phonenumber,#email{
+            display: block;
+            width:70%;
+            height: 40%;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        textarea{
+            width:90%;
+            height:30%;
+            border-radius: 5px;
+
+        }
+       
+        label{
+            font-size: 1.3rem;
+          
+        }
+        .btn{
+            /* width:80%; */
+            width: 40%;
+            position:relative;
+            display: inline-block;
+            margin: 5% 23%;
+            background-color: black;
+            color: white;
+            border-radius: 12px;
+            padding: 4px;
+            font-size: 1.1rem;
+        }
+        .btn:hover{
+            color: black;
+            background-color: #007bff;
+             background-color: #8d9093;
+            border:2px solid black;
+           
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">    <div class="sidebar">
+      
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+       <div class="contactform">
+           <h2>Contact Me For Any Query</h2>
+           <hr>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" >Name</label>
+                <input type="text" class="phone" id="name" required>
+              </div>
+             <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email </label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Mobile No </label>
+              <input type="phone" class="phone" id="phonenumber">
+            </div>
+            <div class="mb-3">
+                <label for="">Please Describe Your Query </label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I want to work on the project</label>
+            </div>
+           
+            
+            <button type="submit" class="btn btn-primary"  target="_blank">Submit</button>
+          </form>
+       </div>
+    </div>
+</div>
+
+</body>
+</html>
